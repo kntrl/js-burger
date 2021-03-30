@@ -8,7 +8,6 @@
 //VARIABLES
 var baseBurgerCost = 9.99;
 var validCouponsList = ["RISPARMINO", "CICCIOBOMBAINCANNOTTIER4"];
-var burgerPrice = baseBurgerCost;
 
 //FUNCTIONS
 //validateCoupon (couponCode)
@@ -34,6 +33,8 @@ priceTotal.innerHTML = "$ " + baseBurgerCost;
 //adding event on btn-calc-price button
 var btnPriceCalc = document.getElementById("btn-calc-price");
 btnPriceCalc.addEventListener("click", function () {
+	//resetting burgerPrice to baseBurgerPrice
+	var burgerPrice = baseBurgerCost;
 	//reading custom burger name.
 	var userBurgerName = document.getElementById("cust-burger-name");
 	console.log("customBurgerName = ", userBurgerName.value);
