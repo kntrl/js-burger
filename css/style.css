@@ -16,6 +16,11 @@ ul {
 	list-style-type: none;
 }
 
+input[type="text"] {
+	border: 0;
+	outline: 0;
+}
+
 /*==================
         GLOBAL
 ====================*/
@@ -44,6 +49,8 @@ header {
 	background-color: #fdbc41;
 	color: #000;
 	border-top: 1px solid #000;
+	padding: 70px 0 40px;
+	font-size: 1.4rem;
 }
 
 /*==================
@@ -61,8 +68,7 @@ main {
 #cust-burger-name {
 	font-size: 2.25rem;
 	font-weight: bold;
-	border: 0;
-	outline: 0;
+	width: 100%;
 }
 
 /* ingredients list */
@@ -81,11 +87,47 @@ ul.ingredients-list {
 
 .ingredient-select {
 	padding-left: 20px;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
 }
-
+.ingredient-select input {
+	margin-left: 5px;
+}
 /* single ingredient */
 .ingredient-thumb {
-	width: 50px;
+	width: 70px;
+}
+
+/* coupon section*/
+.coupon-section {
+	padding: 30px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#user-coupon {
+	margin-left: 10px;
+	flex-grow: 1;
+	background-color: #fff4e2;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/*form buttons*/
+.form-buttons {
+	text-align: center;
+}
+
+.form-buttons .btn {
+	border: 0;
+	outline: 0;
+	background-color: #fdbc41;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 1.25rem;
+	border-radius: 10px;
 }
 
 /*==================
