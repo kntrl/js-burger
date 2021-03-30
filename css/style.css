@@ -8,10 +8,64 @@
 	box-sizing: border-box;
 }
 
+img {
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
 /*==================
         GLOBAL
 ====================*/
 
 body {
 	font-family: "Roboto", sans-serif;
+	background-color: #fff4e2;
+}
+
+#app-wrapper {
+	height: 100vh;
+	width: 800px;
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #000;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+/*==================
+        HEADER
+====================*/
+header {
+	background-color: #fdbc41;
+	color: #000;
+	border-top: 1px solid #000;
+}
+
+/*==================
+        MAIN
+====================*/
+main {
+	flex-grow: 1;
+	background-color: #fff;
+}
+
+/* ingredients list */
+
+/* single ingredient */
+.ingredient-thumb {
+	width: 50px;
+}
+
+/*==================
+        FOOTER
+====================*/
+footer {
+	background-color: #d23359;
+	color: #fff;
+	border-bottom-left-radius: 10px;
 }

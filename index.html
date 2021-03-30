@@ -15,6 +15,119 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<!-- APP WRAPPER -->
+		<div id="app-wrapper">
+			<!-- HEADER -->
+			<header>
+				<div class="container">
+					<h1>Create your Burger</h1>
+				</div>
+			</header>
+			<!-- HEADER ENDS -->
+
+			<!-- MAIN -->
+			<main>
+				<!-- form container -->
+				<div class="container">
+					<!-- burger name field-->
+					<div class="burger-name">
+						<label for="cust-burger-name"> Name your burger</label>
+						<input type="text" id="cust-burger-name" class="burger-name" />
+					</div>
+					<!--ingredients section -->
+					<div class="ingredients-selection">
+						<h2>Ingredients</h2>
+						<!-- ingredients list -->
+						<ul class="ingredients-list">
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/cheese.svg" alt="Cheese" />
+								</div>
+								<div class="ingredient-select">
+									<label for="cheese">Cheese</label>
+									<input type="checkbox" id="cheese" name="cheese" class="cust-ingr-check" value="1" />
+								</div>
+							</li>
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/tomato.svg" alt="Tomato" />
+								</div>
+								<div class="ingredient-select">
+									<label for="tomato">Tomato</label>
+									<input type="checkbox" id="tomato" name="tomato" class="cust-ingr-check" value="0.5" />
+								</div>
+							</li>
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/fried-egg.svg" alt="Fried Egg" />
+								</div>
+								<div class="ingredient-select">
+									<label for="egg">Egg</label>
+									<input type="checkbox" id="egg" name="egg" class="cust-ingr-check" value="1.5" />
+								</div>
+							</li>
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/lettuce.svg" alt="Lettuce" />
+								</div>
+								<div class="ingredient-select">
+									<label for="lettuce">Lettuce</label>
+									<input type="checkbox" id="lettuce" name="lettuce" class="cust-ingr-check" value="0.5" />
+								</div>
+							</li>
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/mustard.svg" alt="Mustard" />
+								</div>
+								<div class="ingredient-select">
+									<label for="mustard">Mustard</label>
+									<input type="checkbox" id="mustard" name="mustard" class="cust-ingr-check" value="0.20" />
+								</div>
+							</li>
+							<!-- single ingredient -->
+							<li>
+								<div class="ingredient-thumb">
+									<img src="img/ketchup.svg" alt="Ketchup" />
+								</div>
+								<div class="ingredient-select">
+									<label for="ketchup">Ketchup</label>
+									<input type="checkbox" id="mustard" name="mustard" class="cust-ingr-check" value="0.10" />
+								</div>
+							</li>
+						</ul>
+						<!-- ingredients list ends -->
+					</div>
+					<!-- ingredient section ends -->
+					<!-- coupon section -->
+					<div class="coupon-section">
+						<label for="coupon">Discount Coupon</label>
+						<input type="text" minlength="4" maxlength="15" id="coupon" />
+					</div>
+					<!-- coupon section ends-->
+					<!-- form buttons -->
+					<div class="form-buttons">
+						<button id="calculate" class="btn-calculate">calculate</button>
+					</div>
+					<!-- form buttons ends -->
+				</div>
+				<!-- form container ends -->
+			</main>
+			<!-- MAIN ENDS -->
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="container">
+					<h2>Your Price</h2>
+					<div id="price-total">&dollar; 50</div>
+				</div>
+			</footer>
+			<!-- FOOTER ENDS -->
+		</div>
 		<script src="js/script.js"></script>
 	</body>
 </html>
